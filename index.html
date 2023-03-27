@@ -4,6 +4,7 @@
     <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="estilos/style.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos/media-query.css">
   </head>
@@ -17,9 +18,19 @@
          <h1>Login</h1>
          <p>Faça seu login e inicie as configurações de seu ambiente.</p>
          <form action="login.php" method="post">
-          
+           <div class="campo">
+             <i class="material-icons">person</i>
+             <input type="email" name="mail" id="imail" placeholder="seu e-mail" maxlength="30">
+             <label for="imail">Login</label>
+           </div>
+           <div class="campo">
+             <i class="material-icons">vpn_key</i>
+             <input type="password" name="pass" id="isenha" placeholder="sua senha" maxlength="10">
+             <label for="isenha">Senha</label>
+           </div>
+           <input type="submit" value="Entrar">
+           <a href="#">Esqueci minha senha<i class="material-icons">mail</i></a>
          </form>
-       </div>
      </section>
    </main>
   </body>
